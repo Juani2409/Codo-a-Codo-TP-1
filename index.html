@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CSS Bootstrap only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
     <title>TP-Integrador</title>
 </head>
+
 <body>
-    
-  
+
+
     <!DOCTYPE html>
     <html lang="es">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,21 +25,25 @@
         <!-- Enlaza el archivo CSS de Bootstrap -->
         <link href="ruta/al/archivo/bootstrap.min.css" rel="stylesheet">
     </head>
+
     <body>
-       
-        
-        <header class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+        <header class="navbar navbar-expand-lg navbar-light" style="background-color: #353A40;">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="#">
-                    <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Conf Bs. As.
+                    <img src="./imagenes/codoacodo.png" alt="" width="120" height="70"
+                        class="d-inline-block align-text-top">
+                    Conf Bs. As.
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
+
                     <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
@@ -53,17 +61,147 @@
                             <a class="nav-link">Comprar tickets</a>
                         </li>
                     </ul>
-                
-                 
                 </div>
             </div>
         </header>
+
+
+
+        <div class="container-fluid edificio">
+        <!-- Texto encima de la imagen de fondo -->
+        <div class="texto-edificio d-flex flex-column align-items-end">
+            <h2>Conf Bs As</h2>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <!-- Botones debajo del texto, alineados a la derecha -->
+            <div class="ms-auto mt-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary ms-2">Secondary</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid cards ">
+        <!-- Contenedor de las tarjetas -->
+        <div class="container mt-5 ">
+            <div class="row justify-content-center align-items-center ">
+                <!-- Tarjeta 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./imagenes/steve.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                        </div>
+                      </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./imagenes/bill.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                        </div>
+                      </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./imagenes/ada.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Lado izquierdo (imagen) -->
+            <div class="col-md-6 p-0">
+                <img src="./imagenes/honolulu.jpg" alt="Imagen" class="img-fluid" style="margin: 0;">
+            </div>
+            <!-- Lado derecho (texto) -->
+            <div class="col-md-6" style="background-color: gray;">
+                <h2>Bs As - Octubre</h2>
+                <p>
+                    Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses.Aunque el nombre de Honolulu se refiere al área urbana en la consta sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600km2 de superficie)
+                </p>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Título centrado -->
+                <h2 class="text-center">Formulario de Contacto</h2>
+                
+                <!-- Inputs para nombre y apellido en la misma línea -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+                
+                <!-- Input que ocupa el mismo ancho que los dos anteriores juntos -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Sobre que quieres hablar?" style="width: 100%; height: 120px;">
+                </div>
+                
+                <!-- Botón que ocupa el mismo ancho que los dos inputs anteriores juntos -->
+                <button type="button" class="col-md-12 btn btn-block" style="background-color: #96C93E; color: white;">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="text-white mt-5" style="background-color:#1E4155 ;" >
+        <div class="container">
+            <div class="row justify-content-center align-items-center ">
+                <p class="col-md-auto m-4 ">Preguntas frecuentes</p>
+                <p class="col-md-auto m-4">Contáctanos</p>
+                <p class="col-md-auto m-4 ">Prensa</p>
+                <p class="col-md-auto m-4 ">Conferencias</p>
+                <p class="col-md-auto m-4 ">Términos y condiciones</p>
+                <p class="col-md-auto m-4 ">Privacidad</p>
+                <p class="col-md-auto m-4 ">Estudiantes</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+
+
+
+
         <!-- Incluye el archivo JavaScript de Bootstrap al final del cuerpo -->
         <script src="ruta/al/archivo/bootstrap.min.js"></script>
     </body>
+
     </html>
-    
+
 
 
 
@@ -73,6 +211,9 @@
 
 
     <!-- JavaScript Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

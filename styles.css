@@ -1,0 +1,33 @@
+
+
+.edificio {
+    background-image: url('./imagenes/ba1.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* Altura deseada */
+    position: relative;
+    
+}
+.edificio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad */
+}
+
+/* Estilo para el texto encima de la imagen de fondo */
+.texto-edificio {
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición vertical del texto */
+    right: 20px; /* Ajusta la posición horizontal del texto */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente del texto */
+    padding: 10px; /* Espaciado interno del texto */
+    height: 300px;
+    width: 600px;
+    text-align: end;
+}
