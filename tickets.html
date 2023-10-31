@@ -11,29 +11,29 @@
 </head>
 
 <body>
-    <div class="container text-center">
+    <div class="container text-center mt-3">
 
         <div class="row justify-content-center align-items-center">
 
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                 <div class="box">
-                    <h2>Estudiante</h2>
+                    <h4>Estudiante</h4>
                     <p>Tienen un descuento</p>
                     <p style="font-weight: bold;">80%</p>
                     <p>*presentar documentación</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                 <div class="box" style="border: 2px solid #2FA7BA">
-                    <h2>Trainee</h2>
+                    <h4>Trainee</h4>
                     <p>Tienen un descuento</p>
                     <p style="font-weight: bold;">50%</p>
                     <p>*presentar documentación</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                 <div class="box" style="border: 2px solid #F8C221">
-                    <h2>Junior</h2>
+                    <h4>Junior</h4>
                     <p>Tienen un descuento</p>
                     <p style="font-weight: bold;">15%</p>
                     <p>*presentar documentación</p>
@@ -46,39 +46,84 @@
         <h4>Venta</h4>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center mt-3">
         <h1>VALOR DE TICKET $200</h1>
     </div>
 
-    <div class="container text-center">
-        <input class="col-4" type="text" placeholder="Nombre">
-        <input class="col-4" type="text" placeholder="Apellido">
+    <div class="container text-center mt-4 ">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <input class="w-100 mb-2" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height:35px;" type="text"
+                    placeholder="Nombre">
+            </div>
+            <div class="col-4">
+                <input class="w-100 mb-2" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;" type="text"
+                    placeholder="Apellido">
+            </div>
+        </div>
     </div>
 
     <div class="container text-center">
-        <input class="col-8 mt-3" type="email" placeholder="Correo">
+        <div class="row justify-content-center">
+            <div class="col-8 ">
+                <input class="w-100 mt-3" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;" type="email"
+                    placeholder="Correo">
+            </div>
+        </div>
     </div>
-    <div class="container">
-        <p>Cantidad</p>
-        <p>Categoria</p>
-    </div>
-    <div>
-        <input class="col-4" type="number" placeholder="Cantidad">
 
-        <select class="col-4">
-            <option value="estudiante">Estudiante</option>
-            <option value="junior">Junior</option>
-            <option value="trainee">Trainee</option>
-        </select>
+    <div class="container text-center ">
+        <div class="row justify-content-center ">
+            <div class="col-4 text-start mt-3">
+                <p>Cantidad</p>
+            </div>
+            <div class="col-4 text-start mt-3">
+                <p>Categoria</p>
+            </div>
+        </div>
     </div>
+
+
+    <div class="container text-center ">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <input class="w-100 mb-5" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;"
+                    type="number" placeholder="Cantidad">
+            </div>
+            <div class="col-4">
+                <Select class="w-100 mb-5" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;" type="text"
+                    placeholder="Selecciona">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="junior">Junior</option>
+                    <option value="trainee">Trainee</option>
+                </select>
+            </div>
+        </div>
     </div>
-    <div>
-        <p class="total">Total a Pagar: $</p>
+
+
+    <div class="container text-center">
+        <div class="row justify-content-center">
+
+            <div class="col-8">
+                <p class="total text-start d-flex align-items-center"
+                    style="height: 50px; padding: 20px; color: #0B377D; border-radius: 5px;">Total a Pagar: $</p>
+            </div>
+        </div>
     </div>
-    <div>
-        <button class="boton-tickets">Borrar</button>
-        <button class="boton-tickets">Resumen</button>
+
+
+    <div class="container text-center ">
+        <div class="row justify-content-center mt-2 mb-5">
+            <div class="col-4">
+                <button class="w-100 mb-2 boton-tickets" style="height: 40px;">Borrar</button>
+            </div>
+            <div class="col-4">
+                <button class="w-100 mb-2 boton-tickets" style="height: 40px;">Resumen</button>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>

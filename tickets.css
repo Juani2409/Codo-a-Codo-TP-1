@@ -7,9 +7,6 @@
   } */
 
   .box {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -18,7 +15,7 @@
 }
 
 .total{
-    border: 1px solid  #1B86F8 ;
+    border: 1px solid  #add3fc ;
     background-color: #CCE5FF;
 }
 
