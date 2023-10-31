@@ -79,11 +79,16 @@
                 <!-- Botones dentro del contenedor -->
                 <div class="botones-container mt-auto">
                     <button type="button" class="btn btn-outline-white text-white">Quiero ser orador</button>
-                    <button type="button" class="btn custom-green-btn ms-2">Comprar tickets</button>
+                    <button type="button" class="btn custom-green-btn ms-2" id="comprarTicketsBtn">Comprar tickets</button>
                 </div>
             </div>
         </div>
+<script>
+    document.getElementById('comprarTicketsBtn').addEventListener('click', function() {
+    window.location.href = 'tickets.html';
+});
 
+</script>
 
 
 

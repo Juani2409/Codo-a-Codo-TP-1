@@ -84,15 +84,14 @@
     </div>
 
 
-    <div class="container text-center ">
+    <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-4">
-                <input class="w-100 mb-5" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;"
-                    type="number" placeholder="Cantidad">
+                <input id="cantidadInput" class="w-100 mb-5" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;"
+                    type="number" placeholder="Cantidad" oninput="calcularTotal()">
             </div>
             <div class="col-4">
-                <Select class="w-100 mb-5" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;" type="text"
-                    placeholder="Selecciona">
+                <select id="tipoSelect" class="w-100 mb-5" style="border-radius: 5px; border: 1px solid rgb(202, 201, 201); height: 35px;" oninput="calcularTotal()">
                     <option value="estudiante">Estudiante</option>
                     <option value="junior">Junior</option>
                     <option value="trainee">Trainee</option>
@@ -100,17 +99,16 @@
             </div>
         </div>
     </div>
-
-
+    
     <div class="container text-center">
         <div class="row justify-content-center">
-
             <div class="col-8">
-                <p class="total text-start d-flex align-items-center"
-                    style="height: 50px; padding: 20px; color: #0B377D; border-radius: 5px;">Total a Pagar: $</p>
+                <p id="totalPagar" class="total text-start d-flex align-items-center" style="height: 50px; padding: 20px; color: #0B377D; border-radius: 5px;">Total a Pagar: $</p>
             </div>
         </div>
     </div>
+
+    
 
 
     <div class="container text-center ">
@@ -119,11 +117,13 @@
                 <button class="w-100 mb-2 boton-tickets" style="height: 40px;">Borrar</button>
             </div>
             <div class="col-4">
-                <button class="w-100 mb-2 boton-tickets" style="height: 40px;">Resumen</button>
+                <button class="w-100 mb-2 boton-tickets" style="height: 40px;" id="resumenButton">Resumen</button>
             </div>
         </div>
     </div>
 
+
+    <script src="tickets.js"></script>
 </body>
 
 </html>
