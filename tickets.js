@@ -120,5 +120,10 @@ convierteteLink.addEventListener('click', function(event) {
     redirectToPage("index");
 });
 
+imagenLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    redirectToPage("index");
+});
+
 // El enlace "Comprar tickets" ya tiene un evento, no es necesario agregar uno nuevo
 
