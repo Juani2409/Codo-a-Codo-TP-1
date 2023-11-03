@@ -98,7 +98,7 @@ var conferenciaLink = document.getElementById('conferenciaLink');
 var oradoresLink = document.getElementById('oradoresLink');
 var lugarFechaLink = document.getElementById('lugarFechaLink');
 var convierteteLink = document.getElementById('convierteteLink');
-var logoLink = document.getElementById('logoLink');
+var logoLink = document.querySelector('.navbar-brand');
 // Agregar eventos a los enlaces para redirigir a las páginas correspondientes
 conferenciaLink.addEventListener('click', function(event) {
     event.preventDefault();
