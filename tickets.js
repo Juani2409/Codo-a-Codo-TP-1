@@ -84,3 +84,41 @@ function borrarDatos() {
     categoriaInput.value = 'estudiante'; // Puedes establecer el valor predeterminado que desees
 }
 
+
+
+//Funcion para que el header lleve a home correctamente en el deploy
+
+// Función para redirigir a la página correspondiente
+function redirectToPage(page) {
+    window.location.href = page + ".html";
+}
+
+// Obtener los enlaces
+var conferenciaLink = document.getElementById('conferenciaLink');
+var oradoresLink = document.getElementById('oradoresLink');
+var lugarFechaLink = document.getElementById('lugarFechaLink');
+var convierteteLink = document.getElementById('convierteteLink');
+
+// Agregar eventos a los enlaces para redirigir a las páginas correspondientes
+conferenciaLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    redirectToPage("index");
+});
+
+oradoresLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    redirectToPage("index");
+});
+
+lugarFechaLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    redirectToPage("index");
+});
+
+convierteteLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    redirectToPage("index");
+});
+
+// El enlace "Comprar tickets" ya tiene un evento, no es necesario agregar uno nuevo
+
