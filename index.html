@@ -59,7 +59,7 @@
                             <a class="nav-link fs-5" style="color: white;">Conviertete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5" style="color: green;" href="./tickets.html">Comprar tickets</a>
+                            <a class="nav-link fs-5" style="color: green;" href="./tickets.html" id="comprarTicketsLink">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -84,8 +84,18 @@
             </div>
         </div>
 <script>
-    document.getElementById('comprarTicketsBtn').addEventListener('click', function() {
+document.getElementById('comprarTicketsBtn').addEventListener('click', function() {
     window.location.href = 'tickets.html';
+});
+
+// Obtener el enlace de "Comprar tickets" en la barra de navegación
+var comprarTicketsLink = document.getElementById('comprarTicketsLink');
+
+// Agregar un evento al enlace para redirigir a tickets.html al hacer clic
+comprarTicketsLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+    window.location.href = 'tickets.html'; // Redirigir a tickets.html
+
 });
 
 </script>
