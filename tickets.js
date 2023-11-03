@@ -120,10 +120,24 @@ convierteteLink.addEventListener('click', function(event) {
     redirectToPage("index");
 });
 
-imagenLink.addEventListener('click', function(event) {
-    event.preventDefault();
-    redirectToPage("index");
-});
+
 
 // El enlace "Comprar tickets" ya tiene un evento, no es necesario agregar uno nuevo
 
+
+
+
+
+// Función para redirigir con el logo a la página index.html
+function redirectToIndex() {
+    window.location.href = '/index.html';
+}
+
+// Obtener el enlace del logo
+var logoLink = document.getElementById('logoLink');
+
+// Agregar evento para redirigir al hacer clic en el logo
+logoLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    redirectToIndex();
+});
