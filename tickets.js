@@ -15,19 +15,36 @@ function calcularTotal() {
 
     document.getElementById("totalPagar").textContent = `Total a Pagar: $${total.toFixed(2)}`;
 }
-
 function mostrarResumen() {
-    const nombre = document.querySelector('input[placeholder="Nombre"]').value;
-    const apellido = document.querySelector('input[placeholder="Apellido"]').value;
-    const correo = document.querySelector('input[placeholder="Correo"]').value;
-    const cantidad = document.getElementById("cantidadInput").value;
-    const categoria = document.getElementById("tipoSelect").value;
+    const nombreInput = document.querySelector('input[placeholder="Nombre"]');
+    const apellidoInput = document.querySelector('input[placeholder="Apellido"]');
+    const correoInput = document.querySelector('input[placeholder="Correo"]');
+    const cantidadInput = document.getElementById("cantidadInput");
+    const categoriaInput = document.getElementById("tipoSelect");
+    
+    const nombre = nombreInput.value;
+    const apellido = apellidoInput.value;
+    const correo = correoInput.value;
+    const cantidad = cantidadInput.value;
+    const categoria = categoriaInput.value;
     const total = document.getElementById("totalPagar").textContent;
 
-    const resumen = `Nombre: ${nombre}\nApellido: ${apellido}\nCorreo: ${correo}\nCantidad: ${cantidad}\nCategoria: ${categoria}\nTotal a Pagar: ${total}`;
+    const resumen = `Nombre: ${nombre}\nApellido: ${apellido}\nCorreo: ${correo}\nCantidad: ${cantidad}\nCategoria: ${categoria}\n${total}`;
 
     alert(resumen);
+
+    // Limpiar los campos
+    nombreInput.value = '';
+    apellidoInput.value = '';
+    correoInput.value = '';
+    cantidadInput.value = '';
+    categoriaInput.value = 'estudiante'; // Puedes establecer el valor predeterminado que desees
+
+    // Mostrar la segunda alerta
+    alert('¡Felicitaciones! Has adquirido tus entradas. Por favor, verifica tu email.');
 }
+
+
 
 function verificarRequisitos() {
     const nombre = document.querySelector('input[placeholder="Nombre"]').value;
@@ -44,3 +61,26 @@ function verificarRequisitos() {
 }
 
 document.getElementById('resumenButton').addEventListener('click', verificarRequisitos);
+
+
+
+
+
+//Boton Borrar
+
+
+function borrarDatos() {
+    const nombreInput = document.querySelector('input[placeholder="Nombre"]');
+    const apellidoInput = document.querySelector('input[placeholder="Apellido"]');
+    const correoInput = document.querySelector('input[placeholder="Correo"]');
+    const cantidadInput = document.getElementById("cantidadInput");
+    const categoriaInput = document.getElementById("tipoSelect");
+
+    // Limpiar los campos
+    nombreInput.value = '';
+    apellidoInput.value = '';
+    correoInput.value = '';
+    cantidadInput.value = '';
+    categoriaInput.value = 'estudiante'; // Puedes establecer el valor predeterminado que desees
+}
+
